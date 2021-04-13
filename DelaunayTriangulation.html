@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+	<meta charset="utf-8" />
+	<title>DelaunayTriangulation</title>
+  </head>
+
+  <body>
+	  <div class="canvas">
+		<canvas id = "webgl" width="600"  height="600">
+			Please use a browser that supports "canvas"
+		</canvas>
+	  </div>
+	  <div class="button">
+		  <button onclick="initPoint()">点我随机生成点</button>
+		  <button style="margin-left: 10px;" onclick="delaunayTriangulation()">点我构造delaunay三角剖分</button>
+	  </div>
+	<script src="./webgl-utils.js"></script>
+	<script src="./webgl-debug.js"></script>
+	<script src="./cuon-utils.js"></script>
+	<script src="./cuon-matrix.js"></script>
+	<!--script src="./DelaunayTriangulation.js"></script-->
+	<script src="./DelaunayTriangulation.js"></script>
+  </body>
+</html>
+
+<style>
+.canvas{
+	margin-left: 27%;
+	margin-top:30px;
+}
+.button{
+	margin-left: 40%;
+	margin-top:20px;
+}
+</style>
